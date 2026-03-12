@@ -8,7 +8,7 @@ The system provides an intuitive dashboard where users can check drug compatibil
 
 ## 🚀 Live Demo
 
-🔗 https://your-live-link.com
+🔗 [https://your-live-link.com](https://medsafe-ai-five.vercel.app/)
 
 ---
 
