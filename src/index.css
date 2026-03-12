@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 1. Set the global background colors */
+:root {
+  --bg-light: #fcfcfd;
+  --bg-dark: #05070a;
+}
+
+/* 2. Apply smooth transitions to EVERYTHING */
+* {
+  @apply transition-colors duration-300;
+}
+
+/* 3. The Studio Pattern */
+.bg-studio {
+  background-color: var(--bg-light);
+  background-image: radial-gradient(#e5e7eb 0.8px, transparent 0.8px);
+  background-size: 30px 30px;
+}
+
+.dark .bg-studio {
+  background-color: var(--bg-dark);
+  background-image: radial-gradient(#1e293b 0.8px, transparent 0.8px);
+}
+
+/* 4. Scrollbar styling for Dark Mode */
+.dark ::-webkit-scrollbar {
+  width: 8px;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #05070a;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 10px;
+}
